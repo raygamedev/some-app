@@ -3,8 +3,9 @@
     "name": "some-app",
     "slug": "some-app",
     "version": "1.0.0",
+    "owner": "raydevs",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/coffeeBeanIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
