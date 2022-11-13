@@ -165,6 +165,7 @@ export const CardScreen = () => {
       setCardColor(card.colors);
       setCardCode(card.code);
       setOpenRedeemPopup(false);
+      setIsCardRedeemable(false)
     }
   };
 
