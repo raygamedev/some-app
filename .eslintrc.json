@@ -1,0 +1,23 @@
+{
+    "extends": [
+      "plugin:prettier/recommended",
+      "react-app"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "off",
+      "no-console": "off",
+          "prettier/prettier": "warn"
+    },
+      "overrides": [{
+        "files": [
+          "**/*.ts", "**/*.tsx"
+        ],
+        "parser": "@typescript-eslint/parser",
+        "plugins": [
+          "@typescript-eslint"
+        ],
+        "extends": [
+          "plugin:@typescript-eslint/eslint-recommended", "plugin:@typescript-eslint/recommended"
+        ]
+    }]
+}

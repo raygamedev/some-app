@@ -1,27 +1,27 @@
-import React from 'react';
-import { Text } from 'react-native';
-import { CardScreen } from './src/apps/NahatMobileApp/screens/CardScreen';
-import { BarcodeScreen } from './src/apps/NahatClientApp/screens/BarcodeScreen';
-import { useServer } from './src/hooks';
-import { LoaderAnim } from './src/components/LoaderAnim/LoaderAnim';
-import { Env, AppVariants } from './Env';
-import { PopupModal } from './src/components/PopupModal/PopupModal';
+import React from "react";
+import { Text } from "react-native";
+import { CardScreen } from "./src/apps/SomeMobile/screens/CardScreen";
+import { BarcodeScreen } from "./src/apps/SomeClient/screens/BarcodeScreen";
+import { useServer } from "./src/hooks";
+import { LoaderAnim } from "./src/components/LoaderAnim/LoaderAnim";
+import { Env, AppVariants } from "./Env";
+import { PopupModal } from "./src/components/PopupModal/PopupModal";
 
 console.log(Env);
 
-const NahatMobileApp = () => {
+const SomeMobile = () => {
   return <CardScreen />;
 };
 
-const NahatClientApp = () => {
+const SomeClient = () => {
   return <BarcodeScreen />;
 };
 
 const getApp = () => {
-  if (Env.APP_VARIANT === AppVariants.NahatClient) {
-    return NahatClientApp();
-  } else if (Env.APP_VARIANT === AppVariants.NahatMobile) {
-    return NahatMobileApp();
+  if (Env.APP_VARIANT === AppVariants.SomeClient) {
+    return SomeClient();
+  } else if (Env.APP_VARIANT === AppVariants.SomeMobile) {
+    return SomeMobile();
   }
   return (
     <PopupModal open={true}>
