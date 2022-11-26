@@ -1,0 +1,12 @@
+version: "2"
+services:
+  nahat-server:
+    image: ghcr.io/nahat-org/nahat_server:latest
+    command: python3 -m nahat_server
+    network_mode: host
+    ports:
+      - "8080:8080"
+    expose:
+      - "8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
